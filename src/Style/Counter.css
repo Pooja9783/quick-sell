@@ -14,11 +14,15 @@
 border-top-right-radius: 10px;
 border-bottom-right-radius: 10px;
 }
-.h1 {
-  width: 90px;
+input{
+  width: 70px;
   background: #f9e9e9;
+  border: none;
   color: #a54946;
   height: 50px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 700px;
 }
 .counter button {
   background: white;

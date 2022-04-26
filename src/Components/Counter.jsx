@@ -2,14 +2,13 @@ import React from "react";
 import { useState } from "react";
 import "../Style/Counter.css";
 const Counter = () => {
-  let [counter, setCounter] = useState(10);
-  //   console.log(input);
-
+  //   let [counter, setCounter] = useState(10);
+  let [input, setInput] = useState(10);
   const counterVal = (val) => {
-    if (counter == "") {
-      setCounter(1000);
+    if (input == " ") {
+      setInput(1000);
     } else {
-      setCounter(val);
+      setInput(val);
     }
   };
 
@@ -17,9 +16,13 @@ const Counter = () => {
     <div className="counter-app">
       <div className="counter">
         <div className="counter-border">
-          <button onClick={() => setCounter(counter - 1)}>-</button>
-          <h1 className="h1">{counter}</h1>
-          <button onClick={() => counterVal(counter + 1)}>+</button>
+          <button onClick={() => setInput(input - 1)}>-</button>
+          <input
+            tpye="number"
+            onChange={(e) => setInput(e.target.value)}
+            value={+input}
+          />
+          <button onClick={() => counterVal(input + 1)}>+</button>
         </div>
       </div>
     </div>
