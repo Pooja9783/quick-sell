@@ -22,7 +22,7 @@ const Counter = () => {
             onChange={(e) => setInput(e.target.value)}
             value={+input}
           />
-          <button onClick={() => counterVal(+input + 1)}>+</button>
+          <button onClick={() => counterVal(Number(input))}>+</button>
         </div>
       </div>
     </div>
