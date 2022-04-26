@@ -1,0 +1,43 @@
+.counter-app {
+  display: flex;
+  justify-content: center;
+}
+.counter-border {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #a54946;
+  border-radius: 8px;
+  width: 160px;
+  height: 60px;
+  margin: 20px 0px;
+border-top-right-radius: 10px;
+border-bottom-right-radius: 10px;
+}
+.h1 {
+    
+  width: 60px;
+  background: #f9e9e9;
+  color: #a54946;
+  height: 60px;
+}
+.counter button {
+  background: white;
+  width: 60px;
+  height: 60px;
+  font-size: 30px;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+button:first-child {
+  color: #a54946;
+border-right: 1px solid #a54946;
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+}
+button:last-child {
+  background: #a54946;
+border-top-right-radius: 9px;
+border-bottom-right-radius: 9px;
+}
