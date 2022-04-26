@@ -5,10 +5,10 @@ const Counter = () => {
   //   let [counter, setCounter] = useState(10);
   let [input, setInput] = useState(10);
   const counterVal = (val) => {
-    if (input == " ") {
+    if (input > 1000) {
       setInput(1000);
     } else {
-      setInput(val);
+      setInput(val + 1);
     }
   };
 
