@@ -5,7 +5,7 @@ const Counter = () => {
   //   let [counter, setCounter] = useState(10);
   let [input, setInput] = useState(10);
   const counterVal = (val) => {
-    if (input > 1000) {
+    if (input > 100000) {
       setInput(1000);
     } else {
       setInput(val + 1);
@@ -18,11 +18,11 @@ const Counter = () => {
         <div className="counter-border">
           <button onClick={() => setInput(input - 1)}>-</button>
           <input
-            tpye="number"
+            tpye="text"
             onChange={(e) => setInput(e.target.value)}
             value={+input}
           />
-          <button onClick={() => counterVal(input + 1)}>+</button>
+          <button onClick={() => counterVal(+input + 1)}>+</button>
         </div>
       </div>
     </div>
